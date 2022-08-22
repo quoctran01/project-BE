@@ -1,0 +1,48 @@
+POST http://localhost:5000/api/auth/regester
+Content-Type: application/json
+
+{
+    "username" :"khacquoc08" ,
+    "password" : "vinhle1972"
+}
+
+
+### 
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "username" :"khacquoc03" ,
+    "password" : "vinhle1972"
+}
+
+### 
+POST  http://localhost:5000/api/posts
+Content-Type: application/json
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MWUzOTEwYjE5MDA5MTFhYmJjOTMwZGEiLCJpYXQiOjE2NDg3MzgzOTd9.HKszlQeXNApNPtB58BV4I60gouujbwlgSleFRle54kQ
+
+{
+    "title" : "reactjs",
+    "description" :"abc" , 
+    "url" : "facebook.com",
+    "status": "LEARNED"
+    
+}
+###
+GET http://localhost:5000/api/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MWUzOTEwYjE5MDA5MTFhYmJjOTMwZGEiLCJpYXQiOjE2NDI0MzA4MTJ9.nUFiggO7I5KDsQ0DA_fYA4sbIgnajfqdRN7WHRoxi_c
+
+###
+PUT  http://localhost:5000/api/posts/61e5818b92c3a795016cbe6b
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MWUzOTEwYjE5MDA5MTFhYmJjOTMwZGEiLCJpYXQiOjE2NDI0MzA4MTJ9.nUFiggO7I5KDsQ0DA_fYA4sbIgnajfqdRN7WHRoxi_c
+
+{
+    "title" : "vue updates with quoc",
+    "description" :"hoc lap trinh vue" , 
+    "url" : "vue.org"
+    
+}
+###
+DELETE   http://localhost:5000/api/posts/61e581bf92c3a795016cbe6d
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MWU0MjhjZDlhOWJiNjY5MjJjMjMyMDIiLCJpYXQiOjE2NDI0Mjc4MjZ9.5cocOrk0a_W5JKVcaS0ooXyG-X0yo2p2dNWrNnQCkXQ
